@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Expérience
-permalink: /experience/
+title: Projets
+permalink: /projets/
 ---
 
-Voici mes expériences à l'EPFL et stages.
+Vous trouverez ici mes différents projets personnels et académiques réalisés durant mes études. 
