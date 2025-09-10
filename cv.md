@@ -4,4 +4,4 @@ title: CV
 permalink: /cv/
 ---
 
-Voici mon CV : [lien vers PDF](assets/CV.pdf)
+<embed src="/assets/CV.pdf" type="application/pdf" width="100%" height="800px" />
