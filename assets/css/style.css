@@ -1,0 +1,7 @@
+.home .page-title {
+  display: none; /* supprime le titre qui double sur la page */
+}
+
+.home .site-title {
+  display: none; /* supprime le titre du site sur l'accueil */
+}
