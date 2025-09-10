@@ -1,3 +1,9 @@
-title: Mon blog personnel 
-description: Ceci est mon blog personnel 
+title: Mon Portfolio
+description: Portfolio de projets EPFL
 theme: minima
+
+# Menu
+header_pages:
+  - index.md
+  - cv.md
+  - experience.md
