@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Bienvenue
 ---
 
 # Bienvenue sur mon site !
