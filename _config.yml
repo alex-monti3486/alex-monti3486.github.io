@@ -1,4 +1,4 @@
-title: Mon Portfolio
+title: Accueil
 description: Portfolio de projets EPFL
 theme: minima
 
@@ -6,4 +6,8 @@ theme: minima
 header_pages:
   - index.md
   - cv.md
-  - experience.md
+  - projets.md
+
+# CSS custom
+include:
+  - assets/css

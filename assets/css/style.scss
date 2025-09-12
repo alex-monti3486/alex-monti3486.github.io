@@ -1,4 +1,8 @@
 ---
 ---
-.home .page-title { display: none; }
-.home .site-title { display: none; }
+
+@import "minima";
+.home h1.page-heading { display: none; }
+.page-link[href="/"] {
+  display: none !important;
+}
