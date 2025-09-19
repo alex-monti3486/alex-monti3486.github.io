@@ -1,0 +1,7 @@
+<a href="{{ page.url | replace: '/fr/', '/en/' | replace: '/en/', '/fr/' }}">
+  {% if page.lang == 'fr' %}
+    🇬🇧 English
+  {% else %}
+    🇫🇷 Français
+  {% endif %}
+</a>

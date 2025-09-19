@@ -11,3 +11,9 @@ header_pages:
 # CSS custom
 include:
   - assets/css
+
+plugins:
+  - jekyll-polyglot
+
+languages: ["fr", "en"]
+default_lang: "fr"

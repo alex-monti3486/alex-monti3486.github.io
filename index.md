@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Bienvenue
+lang: fr
 ---
 
 # Bienvenue sur mon site !
