@@ -1,62 +1,91 @@
 <!DOCTYPE html>
-<html lang="fr"><link rel="stylesheet" href="/en/assets/css/style.css">
-<body><header class="site-header" role="banner">
+<html lang="en"><link rel="stylesheet" href="/en/assets/css/style.css">
+<body><header class="site-header">
+  <div class="wrapper">
+    <!-- Titre du site / Accueil -->
+    <a class="site-title" rel="author" id="site-title" href="/en/">Accueil</a>
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/en/">Accueil</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+    <!-- Menu -->
+    <nav class="site-nav">
+      <a class="page-link" id="link-home" href="/en/">Accueil</a>
+      <a class="page-link" id="link-projects" href="/en/projets/">Projets</a>
+      <a class="page-link" id="link-cv" href="/en/cv/">CV</a>
 
-        <div class="trigger"><a class="page-link" href="/en/">Bienvenue</a><a class="page-link" href="/en/cv/">Curriculum Vitae</a><a class="page-link" href="/en/projets/">Projets</a></div>
-      </nav></div>
+      <!-- Bouton de langue -->
+      <button id="lang-toggle" style="margin-left:1rem; background:none; border:none; cursor:pointer; font-weight:bold;">
+        🇬🇧 EN
+      </button>
+    </nav>
+  </div>
 </header>
+
+<link rel="stylesheet" href="/en/assets/css/style.css">
+
+<script>
+  const langToggle = document.getElementById('lang-toggle');
+
+  // Détecte si on est sur une page anglaise
+  const isEn = window.location.pathname.startsWith('/en');
+
+  function updateHeader() {
+    if(isEn) {
+      document.getElementById('site-title').textContent = 'Home';
+      document.getElementById('link-home').textContent = 'Home';
+      document.getElementById('link-projects').textContent = 'Projects';
+      document.getElementById('link-cv').textContent = 'Resume';
+      langToggle.textContent = '🇫🇷 FR';
+    } else {
+      document.getElementById('site-title').textContent = 'Accueil';
+      document.getElementById('link-home').textContent = 'Accueil';
+      document.getElementById('link-projects').textContent = 'Projets';
+      document.getElementById('link-cv').textContent = 'CV';
+      langToggle.textContent = '🇬🇧 EN';
+    }
+  }
+
+  updateHeader();
+
+  // Redirection vers l'autre langue
+  langToggle.addEventListener('click', () => {
+    let path = window.location.pathname;
+    if(isEn) {
+      path = path.replace(/^\/en/, ''); // EN → FR
+    } else {
+      path = '/en' + path; // FR → EN
+    }
+    window.location.href = path;
+  });
+</script>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Projets</h1>
+    <h1 class="post-title">Projects</h1>
   </header>
 
   <div class="post-content">
-    <p align="justify">
-Vous trouverez ici mes différents projets personnels et académiques réalisés durant mes études. 
-</p>
+    <p align="justify"> Here you will find my various personal and academic projects completed during my studies. </p>
 
 <h3 id="projet-de-master-application-of-the-information-theoretic-clustering-to-the-discrete-choice"><a href="/en/projects/final-report-PDM.pdf">[Projet de Master] Application of the information-theoretic clustering to the discrete choice</a></h3>
 
-<p align="justify">
-Projet de Master explorant l’application de l’algorithme Deterministic Information Bottleneck (DIB) aux modèles de choix discrets afin d’améliorer leur sélection et leur évaluation. En combinant théorie de l’information et analyse de choix, le DIB permet d’identifier les modèles les plus pertinents, offrant de meilleures performances prédictives et une interprétation plus fiable du comportement des individus.
-</p>
+<p align="justify"> Master’s project exploring the application of the Deterministic Information Bottleneck (DIB) algorithm to discrete choice models in order to improve their selection and evaluation. By combining information theory with choice analysis, DIB helps identify the most relevant models, providing better predictive performance and a more reliable interpretation of individual behavior. </p>
 
 <h3 id="projet-de-bachelor-american-causal-inference-conference-data-challenge-2022"><a href="/en/projects/final-report-BA.pdf">[Projet de Bachelor] American Causal Inference Conference Data Challenge 2022</a></h3>
 
-<p align="justify">
-Projet de Bachelor réalisé dans le cadre de l’ACIC Data Challenge 2022, visant à estimer l’impact d’une intervention médicale sur les dépenses de santé. L’analyse combine exploration des données, graphes causaux et ajustement temporel pour identifier les véritables effets du traitement.
-</p>
+<p align="justify"> Bachelor project conducted as part of the ACIC Data Challenge 2022, aiming to estimate the impact of a medical intervention on healthcare expenditures. The analysis combines data exploration, causal graphs, and temporal adjustment to identify the true effects of the treatment. </p>
 
 <h3 id="projet-de-semestre-robust-mean-estimation-on-the-manifold-of-symmetric-positive-definite-matrices"><a href="/en/projects/final-report-MA2.pdf">[Projet de semestre] Robust mean estimation on the manifold of symmetric positive definite matrices</a></h3>
 
-<p align="justify">
-Ce projet de semestre porte sur l’estimation robuste de la moyenne pour les matrices symétriques définies positives (SPD). Contrairement aux estimateurs classiques sensibles aux outliers et aux écarts par rapport à la normalité, les méthodes robustes permettent d’obtenir des résultats plus fiables dans des contextes réels complexes. L’objectif est d’explorer différentes techniques, de se concentrer sur la plus efficace en termes de calcul, et de montrer leur utilité pour améliorer l’analyse statistique de données structurées.
-</p>
+<p align="justify"> This semester project focuses on robust mean estimation for symmetric positive definite (SPD) matrices. Unlike classical estimators, which are sensitive to outliers and deviations from normality, robust methods provide more reliable results in complex real-world contexts. The aim is to explore different techniques, focus on the most computationally efficient one, and demonstrate their usefulness for improving statistical analysis of structured data. </p>
 
 <h3 id="marriage-number-evolution-in-switzerland-1999-2021"><a href="/en/projects/small_project_static.html">Marriage number evolution in Switzerland (1999-2021)</a></h3>
 
-<p align="justify">
-Ce projet, réalisé en collaboration avec Alessio Assuelli et Wael Gafaiti, analyse l'évolution du nombre de mariages en Suisse entre 1999 et 2021. Nous avons étudié l’évolution du nombre de mariages par 1000 habitants (NMTP), l’âge, le sexe, la religion et la richesse des cantons. Les résultats montrent une baisse générale du NMTP depuis 2010, des cantons urbains et riches plus actifs dans le mariage, et des différences selon l’âge et le sexe des mariés. Des visualisations interactives et cartes illustrent ces tendances à l’échelle cantonale et régionale.
-</p>
+<p align="justify"> This project, carried out in collaboration with Alessio Assuelli and Wael Gafaiti, analyzes the evolution of the number of marriages in Switzerland between 1999 and 2021. We studied changes in the number of marriages per 1,000 inhabitants (NMTP), as well as the age, sex, religion, and wealth of the cantons. The results show a general decline in NMTP since 2010, with urban and wealthy cantons being more active in marriage, and differences depending on the age and sex of the spouses. Interactive visualizations and maps illustrate these trends at the cantonal and regional levels. </p>
 
 <h3 id="local-regression-in-r"><a href="/en/projects/local-regression-in-R.html">Local regression in R</a></h3>
 
-<p align="justify">
-Ce projet, réalisé en collaboration avec Alessio Assuelli et Wael Gafaiti, compare trois packages R (lpridge, locfit, locpol) utilisés pour les régressions locales. L’étude montre que lpridge est le plus rapide et précis, locfit est rapide mais moins stable, et locpol est précis mais plus lent. Le choix de la largeur de bande est crucial pour la performance des modèles.
-</p>
+<p align="justify"> This project, completed in collaboration with Alessio Assuelli and Wael Gafaiti, compares three R packages (lpridge, locfit, locpol) used for local regression. The study shows that lpridge is the fastest and most accurate, locfit is fast but less stable, and locpol is accurate but slower. The choice of bandwidth is crucial for model performance. </p>
 
   </div>
 

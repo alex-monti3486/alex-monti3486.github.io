@@ -654,4 +654,8 @@ table td {
   display: none !important;
 }
 
+.page-content p {
+  text-align: justify;
+}
+
 /*# sourceMappingURL=style.css.map */
