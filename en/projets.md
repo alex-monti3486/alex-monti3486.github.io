@@ -7,6 +7,9 @@ lang: en
 
 <p align="justify"> Here you will find my various personal and academic projects completed during my studies. </p>
 
+### [High School Graduation Math Exam Topics – Standard Level: With Detailed Solutions](https://www.amazon.fr/Sujets-dexamen-maturité-gymnasiale-standard/dp/B093RV4VQZ)
+<p align="justify"> This book is a collection of exercises taken from standard-level high school graduation mathematics exams. It contains thirty exercises and covers topics such as functions, geometry, and probability. It comes with detailed solutions that explain each calculation so that students can easily follow the underlying reasoning and, most importantly, internalize the solutions to become more independent during their revision. </p>
+
 ### [[Projet de Master] Application of the information-theoretic clustering to the discrete choice](/projects/final-report-PDM.pdf)
 
 <p align="justify"> Master’s project exploring the application of the Deterministic Information Bottleneck (DIB) algorithm to discrete choice models in order to improve their selection and evaluation. By combining information theory with choice analysis, DIB helps identify the most relevant models, providing better predictive performance and a more reliable interpretation of individual behavior. </p>
