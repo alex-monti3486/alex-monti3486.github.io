@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-permalink: /cv/
+permalink: /en/cv/
 lang: en
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: /projets/
+permalink: /en/projets/
 lang: en
 ---
 
