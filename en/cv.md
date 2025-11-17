@@ -5,4 +5,4 @@ permalink: /cv/
 lang: en
 ---
 
-<embed src="/assets/CV-Monti-EN.pdf" type="application/pdf" width="100%" height="800px" />
+<embed src="/assets/CV-monti-EN.pdf" type="application/pdf" width="100%" height="800px" />
