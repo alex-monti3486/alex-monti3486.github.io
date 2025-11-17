@@ -1,63 +1,33 @@
-/* === Styles déjà présents === */
 @import "minima";
 
-.home h1.page-heading { display: none; }
-.page-link[href="/"] { display: none !important; }
-.page-content p { text-align: justify; }
-
-/* === Responsive pour mobile === */
-
-/* 1. Assure que le viewport est correct */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
+/* Texte justifié */
+.page-content p {
+  text-align: justify;
 }
 
-/* 2. Menu et header flexibles */
-.site-header .wrapper {
-  display: flex;
-  flex-direction: column; /* empile header et nav sur mobile */
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-
-.site-nav {
-  display: flex;
-  flex-wrap: wrap; /* les liens passent à la ligne si trop petit */
-  gap: 0.5rem;
-}
-
-.site-nav a, .site-nav button {
-  font-size: 0.9rem;
-  padding: 0.3rem 0.5rem;
-}
-
-/* 3. PDF, images, vidéos adaptatifs */
+/* PDFs et images adaptatifs */
 embed, iframe, img {
   max-width: 100%;
   height: auto;
 }
 
-/* 4. Titres et texte plus lisibles sur petits écrans */
-h1, h2, h3, h4, h5 {
-  word-break: break-word;
+/* Menu flexible mais discret */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap; /* les liens passent à la ligne si nécessaire */
+  gap: 0.5rem;
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.5;
+/* Garde le header et le site-title identiques */
+.site-header .wrapper {
+  flex-wrap: wrap;
 }
 
-/* 5. Media queries pour très petits écrans */
+/* Ajustements pour très petits écrans */
 @media (max-width: 480px) {
-  .site-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-
   .site-nav a, .site-nav button {
-    width: 100%;
-    text-align: left;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
   }
 
   .page-content {
