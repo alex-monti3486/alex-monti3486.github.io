@@ -4,8 +4,8 @@ theme: minima
 
 # Menu
 header_pages:
-  - cv.md
-  - projets.md
+  - fr/cv.md
+  - fr/projets.md
 
 # CSS custom
 include:
