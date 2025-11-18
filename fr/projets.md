@@ -11,7 +11,7 @@ Vous trouverez ici mes différents projets personnels et académiques réalisés
 ### [Sujets d'examen de maturité gymnasiale en maths standard : avec solutions détaillées](https://www.amazon.fr/Sujets-dexamen-maturité-gymnasiale-standard/dp/B093RV4VQZ)
 
 <p align="justify">
-Cet ouvrage est un recueil d'exercices extraits d'examen de maturité gymnasiale en mathématiques de niveau standard. Il est composé de trente exercices et couvre les thèmes d’étude de fonctions, de géométrie et de probabilités. Il est accompagné d'un corrigé détaillant chaque calcul pour que les élèves aient de la facilité à suivre le raisonnement sous-jacent et surtout à s’approprier le corrigé dans le but de les rendre autonomes durant leur révision.
+Cet ouvrage, réalisé en collaboration avec Romain Marion et l'association Kaizen Classroom, est un recueil d'exercices extraits d'examen de maturité gymnasiale en mathématiques de niveau standard. Il est composé de trente exercices et couvre les thèmes d’étude de fonctions, de géométrie et de probabilités. Il est accompagné d'un corrigé détaillant chaque calcul pour que les élèves aient de la facilité à suivre le raisonnement sous-jacent et surtout à s’approprier le corrigé dans le but de les rendre autonomes durant leur révision.
 </p>
 
 ### [[Projet de Master] Application of the information-theoretic clustering to the discrete choice](/projects/final-report-PDM.pdf)
